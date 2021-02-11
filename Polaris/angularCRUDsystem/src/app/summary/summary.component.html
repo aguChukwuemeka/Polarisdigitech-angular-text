@@ -1,14 +1,17 @@
 <div class="container mt-5">
   <div class="row">
     <div class="col-3" *ngFor="let sum of summary">
-      <div class="card">
+      <div class="card shadow-sm" style="border: none;">
         <div class="card-body py-0">
-          <div class="d-flex">
-            <div class="">
+          <div class="d-flex justify-content-between">
+            <div>
               <small>{{sum.text}}</small>
               <p>{{sum.volume}}</p>
             </div>
-            <div class=""></div>
+            <div class="d-flex">
+              <img class="" src="https://www.jerseywaterworks.org/wp-content/uploads/2016/12/area_graph.png"
+                style="width: 30px; height: 20px; padding: 0px; margin: 0px; align-self: center;" alt="">
+            </div>
           </div>
         </div>
       </div>

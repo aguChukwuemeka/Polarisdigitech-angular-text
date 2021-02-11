@@ -1,13 +1,23 @@
 <app-navbar></app-navbar>
-<div class="container-fluid">
+<div class="container-fluid" style="background-color: rgb(238, 241, 238)">
   <div class="wrapper">
-    <div class="wrapOne bg-warning"></div>
+    <div class="wrapOne card border-0 shadow-sm">
+      <div class="card-body">
+        <div class="">
+          <div class="my-3 btn btn-success rounded">Generate Invoice</div>
+          <h6 class="mt-4 mb-2">Main</h6>
+          <div class="my-4"><i class="fa fa-camera-retro"></i> Overview</div>
+          <app-paymentlist></app-paymentlist>
+          <app-orderlist></app-orderlist>
+        </div>
+      </div>
+    </div>
     <div class="wrapTwo">
       <div class="container-fluid">
         <app-summary></app-summary>
         <app-graph></app-graph>
+        <app-tablecontent></app-tablecontent>
       </div>
     </div>
   </div>
 </div>
-
